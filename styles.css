@@ -1,0 +1,143 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+
+nav {
+    background-color: #56a0d3; 
+    overflow: hidden; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    font-family: 'Arial', sans-serif;
+}
+
+#navbar-logo {
+    height: 40px; 
+    float: left; 
+    padding: 10px; 
+}
+nav ul {
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0;
+}
+
+
+nav li {
+    float: left;
+    font-family: 'Arial', sans-serif;
+}
+
+
+nav a {
+    display: block; 
+    text-decoration: none; 
+    color: white; 
+    padding: 20px 10px; 
+    text-align: center; 
+}
+
+
+nav a:hover {
+    background-color: #3a5f85; 
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 100vh;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.image-top-left, .image-bottom-right {
+    background-position: center;
+    object-fit: cover;
+}
+
+.text-top-right, .text-bottom-left {
+    background: #fff;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-family: 'Georgia', serif;
+}
+
+.text-bottom-left{
+    background: #56a0d3;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+.image-top-left img, .image-bottom-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    width: 80%; 
+    max-width: 600px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+
+caption {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+th {
+    background-color: #56a0d3; 
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; 
+}
+
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+tr:hover {
+    background-color: #ddd; 
+}
+
+
+@media (max-width: 600px) {
+    table {
+        width: 100%;
+    }
+}
